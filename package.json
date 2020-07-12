@@ -1,6 +1,6 @@
 {
-  "name": "pdf.js",
-  "version": "2.0.0",
+  "name": "dgc-pdfjs",
+  "version": "1.0.0",
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.1",
@@ -65,7 +65,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mozilla/pdf.js.git"
+    "url": "git://github.com/leandrogenas/dgc-pdfjs"
   },
-  "license": "Apache-2.0"
+  "license": "LicenseRef-LICENSE"
 }

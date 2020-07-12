@@ -1,48 +1,7 @@
-# PDF.js [![Build Status](https://travis-ci.org/mozilla/pdf.js.svg?branch=master)](https://travis-ci.org/mozilla/pdf.js)
+# dgc-pdfjs
 
-[PDF.js](https://mozilla.github.io/pdf.js/) is a Portable Document Format (PDF) viewer that is built with HTML5.
-
-PDF.js is community-driven and supported by Mozilla. Our goal is to
-create a general-purpose, web standards-based platform for parsing and
-rendering PDFs.
-
-## Contributing
-
-PDF.js is an open source project and always looking for more contributors. To
-get involved, visit:
-
-+ [Issue Reporting Guide](https://github.com/mozilla/pdf.js/blob/master/.github/CONTRIBUTING.md)
-+ [Code Contribution Guide](https://github.com/mozilla/pdf.js/wiki/Contributing)
-+ [Frequently Asked Questions](https://github.com/mozilla/pdf.js/wiki/Frequently-Asked-Questions)
-+ [Good Beginner Bugs](https://github.com/mozilla/pdf.js/issues?direction=desc&labels=5-good-beginner-bug&page=1&sort=created&state=open)
-+ [Projects](https://github.com/mozilla/pdf.js/projects)
-
-Feel free to stop by our [Matrix room](https://chat.mozilla.org/#/room/#pdfjs:mozilla.org) for questions or guidance.
-
-## Getting Started
-
-### Online demo
-
-Please note that the "Modern browsers" version assumes native support for
-features such as e.g. `async`/`await`, `Promise`, and `ReadableStream`.
-
-+ Modern browsers: https://mozilla.github.io/pdf.js/web/viewer.html
-
-+ Older browsers: https://mozilla.github.io/pdf.js/es5/web/viewer.html
-
-### Browser Extensions
-
-#### Firefox
-
-PDF.js is built into version 19+ of Firefox.
-
-#### Chrome
-
-+ The official extension for Chrome can be installed from the [Chrome Web Store](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm).
-*This extension is maintained by [@Rob--W](https://github.com/Rob--W).*
-+ Build Your Own - Get the code as explained below and issue `gulp chromium`. Then open
-Chrome, go to `Tools > Extension` and load the (unpackaged) extension from the
-directory `build/chromium`.
+Este é um fork do repositório [mozilla/pdf.js](https://github.com/mozilla/pdf.js)
+para ser utilizado como um visualizador integrado à aplicação [D&GConecta](https://dgconecta.com.br).
 
 ## Getting the Code
 

@@ -65,10 +65,10 @@ class SecondaryToolbar {
         eventName: "presentationmode",
         close: true,
       },
-      { element: options.openFileButton, eventName: "openfile", close: true },
+      // { element: options.openFileButton, eventName: "openfile", close: true },
       { element: options.printButton, eventName: "print", close: true },
       { element: options.downloadButton, eventName: "download", close: true },
-      { element: options.viewBookmarkButton, eventName: null, close: true },
+      // { element: options.viewBookmarkButton, eventName: null, close: true },
       { element: options.firstPageButton, eventName: "firstpage", close: true },
       { element: options.lastPageButton, eventName: "lastpage", close: true },
       {
@@ -93,42 +93,42 @@ class SecondaryToolbar {
         eventDetails: { tool: CursorTool.HAND },
         close: true,
       },
-      {
-        element: options.scrollVerticalButton,
-        eventName: "switchscrollmode",
-        eventDetails: { mode: ScrollMode.VERTICAL },
-        close: true,
-      },
-      {
-        element: options.scrollHorizontalButton,
-        eventName: "switchscrollmode",
-        eventDetails: { mode: ScrollMode.HORIZONTAL },
-        close: true,
-      },
-      {
-        element: options.scrollWrappedButton,
-        eventName: "switchscrollmode",
-        eventDetails: { mode: ScrollMode.WRAPPED },
-        close: true,
-      },
-      {
-        element: options.spreadNoneButton,
-        eventName: "switchspreadmode",
-        eventDetails: { mode: SpreadMode.NONE },
-        close: true,
-      },
-      {
-        element: options.spreadOddButton,
-        eventName: "switchspreadmode",
-        eventDetails: { mode: SpreadMode.ODD },
-        close: true,
-      },
-      {
-        element: options.spreadEvenButton,
-        eventName: "switchspreadmode",
-        eventDetails: { mode: SpreadMode.EVEN },
-        close: true,
-      },
+      // {
+      //   element: options.scrollVerticalButton,
+      //   eventName: "switchscrollmode",
+      //   eventDetails: { mode: ScrollMode.VERTICAL },
+      //   close: true,
+      // },
+      // {
+      //   element: options.scrollHorizontalButton,
+      //   eventName: "switchscrollmode",
+      //   eventDetails: { mode: ScrollMode.HORIZONTAL },
+      //   close: true,
+      // },
+      // {
+      //   element: options.scrollWrappedButton,
+      //   eventName: "switchscrollmode",
+      //   eventDetails: { mode: ScrollMode.WRAPPED },
+      //   close: true,
+      // },
+      // {
+      //   element: options.spreadNoneButton,
+      //   eventName: "switchspreadmode",
+      //   eventDetails: { mode: SpreadMode.NONE },
+      //   close: true,
+      // },
+      // {
+      //   element: options.spreadOddButton,
+      //   eventName: "switchspreadmode",
+      //   eventDetails: { mode: SpreadMode.ODD },
+      //   close: true,
+      // },
+      // {
+      //   element: options.spreadEvenButton,
+      //   eventName: "switchspreadmode",
+      //   eventDetails: { mode: SpreadMode.EVEN },
+      //   close: true,
+      // },
       {
         element: options.documentPropertiesButton,
         eventName: "documentproperties",
@@ -247,25 +247,25 @@ class SecondaryToolbar {
 
   _bindScrollModeListener(buttons) {
     function scrollModeChanged({ mode }) {
-      buttons.scrollVerticalButton.classList.toggle(
-        "toggled",
-        mode === ScrollMode.VERTICAL
-      );
-      buttons.scrollHorizontalButton.classList.toggle(
-        "toggled",
-        mode === ScrollMode.HORIZONTAL
-      );
-      buttons.scrollWrappedButton.classList.toggle(
-        "toggled",
-        mode === ScrollMode.WRAPPED
-      );
+      // buttons.scrollVerticalButton.classList.toggle(
+      //   "toggled",
+      //   mode === ScrollMode.VERTICAL
+      // );
+      // buttons.scrollHorizontalButton.classList.toggle(
+      //   "toggled",
+      //   mode === ScrollMode.HORIZONTAL
+      // );
+      // buttons.scrollWrappedButton.classList.toggle(
+      //   "toggled",
+      //   mode === ScrollMode.WRAPPED
+      // );
 
       // Temporarily *disable* the Spread buttons when horizontal scrolling is
       // enabled, since the non-default Spread modes doesn't affect the layout.
-      const isScrollModeHorizontal = mode === ScrollMode.HORIZONTAL;
-      buttons.spreadNoneButton.disabled = isScrollModeHorizontal;
-      buttons.spreadOddButton.disabled = isScrollModeHorizontal;
-      buttons.spreadEvenButton.disabled = isScrollModeHorizontal;
+      // const isScrollModeHorizontal = mode === ScrollMode.HORIZONTAL;
+      // buttons.spreadNoneButton.disabled = isScrollModeHorizontal;
+      // buttons.spreadOddButton.disabled = isScrollModeHorizontal;
+      // buttons.spreadEvenButton.disabled = isScrollModeHorizontal;
     }
     this.eventBus._on("scrollmodechanged", scrollModeChanged);
 
@@ -278,18 +278,18 @@ class SecondaryToolbar {
 
   _bindSpreadModeListener(buttons) {
     function spreadModeChanged({ mode }) {
-      buttons.spreadNoneButton.classList.toggle(
-        "toggled",
-        mode === SpreadMode.NONE
-      );
-      buttons.spreadOddButton.classList.toggle(
-        "toggled",
-        mode === SpreadMode.ODD
-      );
-      buttons.spreadEvenButton.classList.toggle(
-        "toggled",
-        mode === SpreadMode.EVEN
-      );
+      // buttons.spreadNoneButton.classList.toggle(
+      //   "toggled",
+      //   mode === SpreadMode.NONE
+      // );
+      // buttons.spreadOddButton.classList.toggle(
+      //   "toggled",
+      //   mode === SpreadMode.ODD
+      // );
+      // buttons.spreadEvenButton.classList.toggle(
+      //   "toggled",
+      //   mode === SpreadMode.EVEN
+      // );
     }
     this.eventBus._on("spreadmodechanged", spreadModeChanged);
 

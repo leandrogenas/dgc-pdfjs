@@ -1891,7 +1891,7 @@ function webViewerInitialized() {
       !window.FileList ||
       !window.Blob
     ) {
-      appConfig.toolbar.openFile.setAttribute("hidden", "true");
+      // appConfig.toolbar.openFile.setAttribute("hidden", "true");
       appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "true");
     } else {
       fileInput.value = null;
@@ -1927,7 +1927,7 @@ function webViewerInitialized() {
       });
     });
   } else {
-    appConfig.toolbar.openFile.setAttribute("hidden", "true");
+    // appConfig.toolbar.openFile.setAttribute("hidden", "true");
     appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "true");
   }
 
@@ -2163,8 +2163,8 @@ function webViewerUpdateViewarea(evt) {
   const href = PDFViewerApplication.pdfLinkService.getAnchorUrl(
     location.pdfOpenParams
   );
-  PDFViewerApplication.appConfig.toolbar.viewBookmark.href = href;
-  PDFViewerApplication.appConfig.secondaryToolbar.viewBookmarkButton.href = href;
+  // PDFViewerApplication.appConfig.toolbar.viewBookmark.href = href;
+  // PDFViewerApplication.appConfig.secondaryToolbar.viewBookmarkButton.href = href;
 
   // Show/hide the loading indicator in the page number input element.
   const currentPage = PDFViewerApplication.pdfViewer.getPageView(
@@ -2249,11 +2249,11 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
 
     // URL does not reflect proper document location - hiding some icons.
     const appConfig = PDFViewerApplication.appConfig;
-    appConfig.toolbar.viewBookmark.setAttribute("hidden", "true");
-    appConfig.secondaryToolbar.viewBookmarkButton.setAttribute(
-      "hidden",
-      "true"
-    );
+    // appConfig.toolbar.viewBookmark.setAttribute("hidden", "true");
+    // appConfig.secondaryToolbar.viewBookmarkButton.setAttribute(
+    //   "hidden",
+    //   "true"
+    // );
     appConfig.toolbar.download.setAttribute("hidden", "true");
     appConfig.secondaryToolbar.downloadButton.setAttribute("hidden", "true");
   };
